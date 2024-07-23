@@ -26,9 +26,9 @@ void login()
 	cout << "Registered Password: ";
 	cin >>	confirmPassword;
 
-	if(confirmPassword != username || confirmPassword != password)
+	if(confirmUsername != username || confirmPassword != password)
 	 {
-		cout <<	"Password is Incorrect"; 
+		cout <<	"Password is Incorrect" << endl; 
 		attempts -= 1;
 		if(attempts == 0){
             cout << "Last attempt failed account locked..." << endl;
@@ -36,7 +36,7 @@ void login()
 	 } 
 	else 
 	 {
-		cout <<	"You have successfully logged in";
+		cout <<	"You have successfully logged in" << endl;
 		break;	
 	 }
   }	
